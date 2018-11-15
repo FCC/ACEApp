@@ -1,0 +1,249 @@
+
+p {
+  margin: 0;
+  padding: 0 0 5px 0;
+  line-height: 20px;
+}
+
+.phone {
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.span4 {
+  width: 85px;
+  float: left;
+  margin: 20px 10px 10px 5px;
+}
+
+.smaller-keyboard{
+	margin: 0px 0px 28.5px 15px;
+	height: 20px;
+}
+
+.smaller-keyboard > .big{
+	width: 20px;
+}
+
+.smaller-keyboard > .small{
+	width: 15px;
+	margin-top: 7px;
+}
+.smaller-keyboard > .txt{
+	margin-left: 15px;
+	display: flex;
+}
+
+/* turn into an id*/
+.num-pad { 
+  margin: auto;
+}
+
+.keypad-button{
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.txt {
+  text-align: center;
+  margin-top: 5px;
+  font-family: 'Roboto Medium';
+  line-height: px;
+  color: #333;
+}
+
+.big {
+	font-size: 30px;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.active {
+  color: #3498db;
+}
+
+#button_menu_panel{
+  margin-top: 70px;
+}
+
+.button_menu {
+  background: 0 0;
+  border: none;
+  color: #000;
+  padding: 0px 20px;
+  height: 40px;
+}
+
+.button_menu_selected{
+	background-color : @msg-background; 
+	border: none;
+	color: #000;
+	padding: 0px 20px;
+	height: 40px;
+}
+
+/*
+ * Synchronized styles for the transcript box
+ */
+
+@msg-text: black;
+@msg-background: #b3ffff; 
+// @final-color: purple;
+// @interim-color: #7986CB;
+@final-color: @msg-background;
+@interim-color: @msg-background;
+
+.transcription_on {
+  background-color: #32CD32;
+  display: block;
+}
+.transcription_off {
+  background-color: #ff1a1a;
+}
+
+.transcript-box_big {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+  text-align: left;
+  overflow-y:scroll; 
+  height: 420px;
+}
+
+.transcript-box_small{
+  height: 225px;
+}
+
+.message-whitespace {
+  width:100%;
+  padding-top:20px;
+}
+.message-text {
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px 18px;
+  position: relative;
+  vertical-align: top;
+  color: @msg-text;
+  width: 90%;
+}
+.message-text::before {
+  content: "\00a0";
+  display: block;
+  height: 16px;
+  position: absolute;
+  transform: rotate(29deg) skew(-35deg);
+  -moz-transform: rotate(29deg) skew(-35deg);
+  -ms-transform: rotate(29deg) skew(-35deg);
+  -o-transform: rotate(29deg) skew(-35deg);
+  -webkit-transform: rotate(29deg) skew(-35deg);
+  width: 5%;
+}
+
+.message-text-me{
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px 18px;
+  position: relative;
+  vertical-align: top;
+  color: @msg-text;
+  width: 90%;
+}
+.message-text-me::after {
+	content: "\00a0";
+	display: block;
+	height: 25px;
+	top: 10px;
+	left: 94%;
+	position: absolute;
+	transform: rotate(29deg) skew(-35deg);
+	-moz-transform: rotate(-29deg) skew(35deg);
+	-ms-transform: rotate(-29deg) skew(35deg);
+	-o-transform: rotate(-29deg) skew(35deg);
+	-webkit-transform: rotate(-29deg) skew(35deg);
+	width: 5%;
+	background-color: #008ae6;
+}
+
+.message-final {
+  background-color: @final-color;
+}
+.message-final::before {
+  background-color: @final-color;
+  left: -3px;
+}
+.message-interim {
+  background-color: @interim-color;
+}
+.message-interim::before {
+  background-color: @interim-color;
+  left: -3px;
+}
+
+.you {
+  float: left;
+  margin: 5px 45px 5px 25px;
+}
+
+.me {
+  background-color: #008ae6;
+  float: right;
+  margin: 5px 20px 5px 45px;
+}
+.me::before {
+  background-color: #008ae6;
+  right: -9px;
+}
+
+div#call-controls input {
+  font-family: "Roboto Medium";
+  font-style: oblique;
+  //font-size: 1em;
+  width: 100%;
+  height: 2em;
+  padding: .5em;
+  display: block;
+  font-size: 22px;
+}
+
+div#call-controls button#button-hangup {
+  display: none;
+}
+
+.button-icon {
+  width: 40px;
+}
+
+#button-call {
+  border-radius: 50%;
+  height: 50px;
+  background-color: #32CD32;
+  border: none;
+  margin-top: 10px;
+}
+.bottomspace {
+  margin-bottom: 10px;
+}
+
+
+.input-group{
+	margin-top: 20px;
+}
+
+.hangup-state{
+
+  background-color: #ff1a1a !important;
+  transform: rotate(138deg);
+
+}
+
+#progress-message{
+	text-align: center;
+    font-size: 25px;
+    font-family: "Roboto Medium";
+    font-style: oblique;
+}

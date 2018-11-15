@@ -1,0 +1,80 @@
+<div id="callCard" class="card">
+    <div class="container-fluid ">
+
+        <div id="call-controls">
+
+            <div id="button_menu_panel" class="center bottomspace" style="display: none">
+                <div>
+                    <p id="transcription_indicator"></p>
+                </div>
+                <button class="button_menu" id="mute">
+					<img class="button-icon" src="pic/mic-on.png">
+				</button>
+
+                <button class="button_menu" id="speaker">
+					<img class="button-icon" src="pic/speaker.png">
+				</button>
+
+                <button class="button_menu" id="dial">
+					<img class="button-icon" src="pic/dial.png">
+				</button>
+
+            </div>
+            <div class="col-md-4 " id="captions" style="display: none">
+                <div class="right" style="display: none">
+                    <button id="start_button" onclick="startButton(event)"></button>
+                </div>
+                <div id="transcript-box" class="transcript-box_big">
+
+                </div>
+                <div id="progress-message" class="transcript-box_big" style="display: none">
+                    Calling...
+                </div>
+
+            </div>
+			
+            <div class="phone" id="keypad">
+				<div class="input-group">
+                        <input id="phone-number" type="text" readonly class="form-control input-lg" placeholder="Enter a phone #" />
+                        <div class="input-group-addon">
+                            <img id="phone-number-delete-btn" src="pic/ic_backspace.png" height="25" />
+                        </div>
+                </div>
+                <div>
+           		
+                    <div class="num-pad">
+                        <% var key=[ 1, 2, 3 , 4 ,5 ,6, 7, 8, 9, '*', 0, '#']; var label=[ '', 'ABC', 'DEF', 'GHI', 'JKL', 'MNO', 'PQRS', 'TUV', "WXYZ", '', '', '' ] ; if (key.length === label.length) label.forEach( (x,i)=>{ %>
+                            <div class="span4">
+                                    <div class="txt keypad-button">
+                                        <div class="big">
+                                            <%=key[i] %>
+                                        </div>
+                                        <div class="small">
+                                            <%= label[i] %>
+                                        </div>
+                                    </div>
+                            </div>
+                            <% }); else {%>
+                                <div>INTERNAL ERROR: mismatched arrays</div>
+                                <% } %>
+                                    <div class="clearfix"></div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div></div>
+                                        </div>
+                                    </div>
+                    </div>
+                    <div id="log"></div>
+                </div>
+            </div>
+
+            <div class="center">
+                <button id="button-call">
+					<img class="button-icon" src="pic/call.png">
+				</button>
+                <button id="button-hangup">Hangup</button>
+            </div>
+        </div>
+
+    </div>
+</div>

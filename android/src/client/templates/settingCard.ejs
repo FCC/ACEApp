@@ -1,0 +1,96 @@
+
+<div id="settingCard" class="card" >
+
+
+<form>
+    <div class="header-size-font header-spacing">Settings</div>
+
+    <label class="form-label">
+        <span><p id="hostForm_invalid"></p></span>
+        <span for="hostForm" class="body-size-font">Host:</span>
+        <input class="body-size-font" type="text" id="hostForm" placeholder="hostname">
+    </label>
+
+    <label class="form-label">
+        <span><p id="sipportForm_invalid"></p></span>
+        <span for="sipportForm" class="body-size-font">SIP Port:</span>
+        <input class="body-size-font" type="text" id="sipportForm" placeholder="SIP Port">
+	</label>
+
+	<label class="form-label">
+        <span><p id="extensionForm_invalid"></p></span>
+        <span for="extensionForm" class="body-size-font">Extension:</span>
+        <input class="body-size-font" type="text" id="extensionForm" placeholder="Extension">
+	</label>
+
+    <label class="form-label">
+  	    <span class="body-size-font" for="passwordForm" >Password:</span>
+        <input class="body-size-font" type="password" id="passwordForm" placeholder="Password">
+    </label>
+
+    <label class="form-label">
+        <span class="body-size-font" for="buildNumber_Form">BuildNumber:</span>
+        <input class="body-size-font" type="text" readonly="true" id="buildNumber_Form"  placeholder="<%= buildnbr %>">
+    </label>
+
+    <label class="form-label">
+        <span class="body-size-font" for="deviceId_Form">Device Id:</span>
+        <input class="body-size-font" type="text" readonly="true" id="deviceId_Form"  placeholder="deviceId">
+    </label>
+
+    <label class="form-label">
+        <input class="button-size-font" type="button" id="buttonSettingSubmit" value="Submit">
+        <input class="button-size-font" type="button" id="buttonSettingCancel" value="Cancel">
+    </label>
+
+<!--
+	  <div>
+        <label class="body-size-font" for="sip_uriForm">Sip URI:</label>
+        <input class="body-size-font" type="text" id="sip_uriForm" placeholder="Sip URI">
+	  </div>
+-->
+<!--
+	  <div>
+        <label class="body-size-font" for="websocketURIForm" >WebSocket URI:</label>
+        <input class="body-size-font" type="text" id="websocketURIForm" placeholder="WebSocket URI">
+	  </div>
+	  <div>
+          <label class="body-size-font" for="transportForm">Transport:</label>
+          <input class="body-size-font" type="text" id="transportForm"  placeholder="Transport">
+	  </div>
+
+	  <div>
+		  <label class="body-size-font" for="registrar_serverForm">Registrar Server:</label>
+          <input class="body-size-font" type="text" id="registrar_serverForm"  placeholder="Registrar Server">
+	  </div>
+
+	  <div>
+		  <label class="body-size-font" for="contact_uriForm">Contact URI:</label>
+          <input class="body-size-font" type="text" id="contact_uriForm"  placeholder="Contact URI">
+		  </div>
+
+		  <div>
+		  <label class="body-size-font" for="authorization_userForm">Authorization User:</label>
+          <input class="body-size-font" type="text" id="authorization_userForm"  placeholder="Authorization User">
+		  </div>
+
+		  <div>
+		  <label class="body-size-font" for="instance_idForm">Instance ID:</label>
+          <input class="body-size-font" type="text" id="instance_idForm"  placeholder="Instance ID">
+		  </div>
+
+		  <div>
+		  <label class="body-size-font" for="buildNumber_Form">Build Number:</label>
+          <input class="body-size-font" type="text" readonly="true" id="buildNumber_Form"  placeholder="<%= buildnbr %>">
+		  </div>
+
+		  <div>
+		  <label class="body-size-font" for="gitCommit_Form">Git Commit:</label>
+          <input class="body-size-font" type="text" readonly="true" id="gitCommit_Form"  placeholder="<%= gitcommit %>">
+		  </div>
+ -->
+
+
+    </form>
+</div>
+<!--VIM:ts=4 -->
