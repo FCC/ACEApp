@@ -24,7 +24,7 @@
   "dependencies": {
     "@types/jquery": "^2.0.48",
     "atob": "^2.1.0",
-    "bootstrap": "^4.1.2",
+    "bootstrap": "3.3.7",
     "cryptiles": "^4.1.2",
     "deep-extend": "^0.5.1",
     "ejs": "^2.5.6",

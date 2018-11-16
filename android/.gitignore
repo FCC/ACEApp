@@ -5,7 +5,6 @@ build
 secrets
 public/
 buildnbr.txt
-njdev2.pem
 src/client/*.js
 tests/client/*.js
 *.log
