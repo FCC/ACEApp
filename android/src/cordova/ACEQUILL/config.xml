@@ -4,6 +4,7 @@
     <description> ACE Quill Client Application </description>
     <author email="acequill@organization.org" href="http://acequill.organization.org"> ACE Quill Team </author>
     <content src="index.html" />
+    <icon src="res/icon/android/ACE-quill-icon-144x144.png" />
     <access origin="*" />
     <preference name="Orientation" value="portrait" />
     <allow-intent href="http://*/*" />
