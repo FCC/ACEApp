@@ -17,6 +17,7 @@ export class Setting implements ISetting{
 	};
 
 	show() {
+    $('#deviceId_Form').val(gDeviceId); 
 		this.cardui.expose("settingCard");
 	}
 	registerEventHandlers():void {
@@ -27,7 +28,7 @@ export class Setting implements ISetting{
 			 this.saveConfigurationFromForm();
 			 this.cardui.expose("historyCard");
 		});
-
+    
 		$('#buttonSettingCancel').click(x=> {
 			this.setConfig(this.storedConfig);
 			this.validateForm(this.storedConfig);
@@ -43,16 +44,16 @@ export class Setting implements ISetting{
 	 		this.app = app;
 	}
 
-     private grabConfig() : SipConfig {
-		var config = new SipConfig();
+  private grabConfig() : SipConfig {
+    var config = new SipConfig();
 
-		config.host = $('#hostForm').val();
-		config.extension = $('#extensionForm').val();
-		config.sipport = $('#sipportForm').val();
-		config.password = $("#passwordForm").val();
+    config.host = $('#hostForm').val();
+    config.extension = $('#extensionForm').val();
+    config.sipport = $('#sipportForm').val();
+    config.password = $("#passwordForm").val();
 
-        return config;
-     }
+    return config;
+  }
 
   private saveConfigurationFromForm():void {
         var config = this.grabConfig();
@@ -62,7 +63,7 @@ export class Setting implements ISetting{
 		});
 	}
 
-    setConfig(config:SipConfig){
+  setConfig(config:SipConfig){
 		this.storedConfig = config;
 
         $('#hostForm').val(config.host);

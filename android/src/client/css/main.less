@@ -1,6 +1,9 @@
 .container-fluid {
   font-family: "Roboto Medium";
 }
+button:focus {
+  outline:0;
+}
 .app-body {
   background-color: #FFFFFF;
   margin: 0;
@@ -21,7 +24,6 @@
   line-height: 1.42857143;
   letter-spacing: 4px;
   border-radius: 0;
-  display: inline-block;
 }
 .navbar li a,
 .navbar .navbar-brand,
@@ -44,6 +46,9 @@
 	width: 35px;
 	margin-top: -7px;
 }
+#tabs{
+  margin-top: 50px;
+}
 /************************************/
 #client-name {
   text-align: left;
@@ -58,7 +63,6 @@ button {
   font-size: .8em;
   font-weight: lighter;
   outline: 0;
-  margin-right: auto;
   margin-left: auto;
 }
 button:active {
@@ -75,7 +79,6 @@ div.tab {
 }
 /* Style the buttons inside the tab */
 div.tab button {
-  margin-top: 40px;
   background-color: #3F51B5;
   color: #FFFFFF;
   border: none;

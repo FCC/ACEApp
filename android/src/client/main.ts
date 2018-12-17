@@ -54,7 +54,7 @@ function run()
     if (window['isCordova']) {
         if(typeof device === 'undefined') {
             gDeviceId = 'unknown_device';
-    		configSvc = new LocalConfigSvc();
+            configSvc = new LocalConfigSvc();
         }else {
             gDeviceId = device.uuid;
             configSvc = new SecureLocalConfigSvc();
